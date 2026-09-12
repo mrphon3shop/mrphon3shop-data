@@ -1,14 +1,14 @@
 {
   "hostname": "mrphon3shop-node.tail3641f4.ts.net",
-  "tailnet_ip": "100.68.235.118",
+  "tailnet_ip": "100.125.237.26",
   "funnel": {
-    "enabled": false,
-    "mode": "",
-    "port": 0,
-    "ssh_command": ""
+    "enabled": true,
+    "mode": "tcp",
+    "port": 10000,
+    "ssh_command": "ssh -p 10000 root@mrphon3shop-node.tail3641f4.ts.net"
   },
   "tailscale_version": "1.102.4",
   "backend_state": "Running",
   "attempted_funnel_ports": false,
-  "updated_at": "2026-09-12T16:35:21Z"
+  "updated_at": "2026-09-12T16:39:09Z"
 }
