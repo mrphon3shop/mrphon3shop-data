@@ -1,16 +1,21 @@
 {
-  "run_id": "34707349579",
+  "run_id": "34707530220",
   "node": "mrphon3shop-node",
-  "role": "unknown",
-  "status": "stopped",
-  "note": "operator-reboot-2",
-  "updated_at": "2026-09-12T17:09:28Z",
-  "epoch": 1789232968,
-  "deadline_epoch": 1789253941,
+  "role": "leader",
+  "status": "running",
+  "note": "node up",
+  "updated_at": "2026-09-12T17:13:35Z",
+  "epoch": 1789233215,
+  "deadline_epoch": 1789254152,
   "uptime_seconds": 0,
-  "run_url": "https://github.com/mrphon3shop/mrphon3shop.com/actions/runs/34707349579",
-  "commit": "24311b6b623ccc49240b58e82c19ba533dcdc097",
-  "funnel": {},
+  "run_url": "https://github.com/mrphon3shop/mrphon3shop.com/actions/runs/34707530220",
+  "commit": "a7ee20111d43f53149c66a28a6fcc26bdc547cfc",
+  "funnel": {
+    "enabled": true,
+    "mode": "tls",
+    "port": 10000,
+    "hostname": "mrphon3shop-node.tail3641f4.ts.net"
+  },
   "services": {
     "total": 2,
     "healthy": 2
