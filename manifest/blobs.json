@@ -1,6 +1,6 @@
 {
-  "seq": 7,
-  "updated_at": "2026-09-12T16:35:12Z",
+  "seq": 12,
+  "updated_at": "2026-09-12T16:35:24Z",
   "blobs": {
     "inventory": {
       "sha256": "e72a2de6371daea76bbbeca1bc45e2bdd67d04bb1968cf95f4dcb44bf719517b",
@@ -11,44 +11,44 @@
       "repo_rev": "5dfc74a"
     },
     "appdata-webapp": {
-      "sha256": "9c4bd4f59616a13576f96c88312c00e1c9994106688af2e84a90b21d16b01104",
+      "sha256": "567042ff2f25d27ec849e5d2791e66c49369ff66173e851cd2a07090ed9b9c76",
       "size": 436,
       "kind": "data",
-      "updated_at": "2026-09-12T16:32:41Z",
-      "node_run": "34705506792",
-      "repo_rev": "b3e8a15"
+      "updated_at": "2026-09-12T16:35:24Z",
+      "node_run": "34705661487",
+      "repo_rev": "a8a4de6"
     },
     "appcfg-webapp": {
-      "sha256": "37e463525b8dfed0168e97d6ca0ea82b1297eb9752665a6015f1eb4c9a978000",
-      "size": 426,
+      "sha256": "6b47b704c7c05204780c262aa4663752fb9ebfa93b2fc4a9008b35fbeea27820",
+      "size": 425,
       "kind": "data",
-      "updated_at": "2026-09-12T16:32:41Z",
-      "node_run": "34705506792",
-      "repo_rev": "b3e8a15"
+      "updated_at": "2026-09-12T16:35:24Z",
+      "node_run": "34705661487",
+      "repo_rev": "a8a4de6"
     },
     "tailscale-state": {
-      "sha256": "5f0f88131b93e733de5b908b545b77d28162bee6d07ecbc4a505f5c99dac7b17",
-      "size": 916,
+      "sha256": "a49d4a8fcfcbc416427533ef0e0d5b68fb18b9bf466c7e9ceff35a3cc37d4ffe",
+      "size": 6355,
       "kind": "data",
-      "updated_at": "2026-09-12T16:32:42Z",
-      "node_run": "34705506792",
-      "repo_rev": "b3e8a15"
+      "updated_at": "2026-09-12T16:35:24Z",
+      "node_run": "34705661487",
+      "repo_rev": "a8a4de6"
     },
     "system": {
-      "sha256": "1d7631cd57579f808aea329b4468ea5fc9a7cdf5d33fc9c471cc1af4bc7c705a",
-      "size": 2065,
+      "sha256": "fc8e09fc6be8b4173bf3ea1d409ea4089a5dc9f3066f66410402f71f9ed95e68",
+      "size": 2067,
       "kind": "data",
-      "updated_at": "2026-09-12T16:32:42Z",
-      "node_run": "34705506792",
-      "repo_rev": "b3e8a15"
+      "updated_at": "2026-09-12T16:35:24Z",
+      "node_run": "34705661487",
+      "repo_rev": "a8a4de6"
     },
     "desired": {
-      "sha256": "17bb6dbb1549d1d0003cefa7ade626fb37319d40255c067e6151aae6270c66bb",
-      "size": 366,
+      "sha256": "46023fa493f2eaaabd8ba5bbb1e3e4498f42c62b73611205073abe6cb23068ac",
+      "size": 368,
       "kind": "data",
-      "updated_at": "2026-09-12T16:32:42Z",
-      "node_run": "34705506792",
-      "repo_rev": "b3e8a15"
+      "updated_at": "2026-09-12T16:35:24Z",
+      "node_run": "34705661487",
+      "repo_rev": "a8a4de6"
     }
   }
 }
