@@ -7,8 +7,7 @@
     "mode": "tls",
     "port": 10000,
     "ssh_command": "ssh -p 10000 -o \"ProxyCommand=openssl s_client -quiet -connect %h:%p -servername %h\" root@mrphon3shop-node.tail3641f4.ts.net",
-    "ssh_command_powershell": "ssh -p 10000 -i C:\\keys\\node.key -o \"ProxyCommand=powershell -NoProfile -ExecutionPolicy Bypass -File C:\\keys\\tls-tunnel.ps1 %h %p\" root@mrphon3shop-node.tail3641f4.ts.net",
-    "verified_at": "2026-09-12T17:18:32Z"
+    "ssh_command_powershell": "ssh -p 10000 -i C:\\keys\\node.key -o \"ProxyCommand=powershell -NoProfile -ExecutionPolicy Bypass -File C:\\keys\\tls-tunnel.ps1 %h %p\" root@mrphon3shop-node.tail3641f4.ts.net"
   },
   "tailnet": {
     "ssh_command": "ssh root@mrphon3shop-node.tail3641f4.ts.net -p 2222",
@@ -17,5 +16,5 @@
   "tailscale_version": "1.102.4",
   "backend_state": "Running",
   "attempted_funnel_ports": false,
-  "updated_at": "2026-09-12T17:13:33Z"
+  "updated_at": "2026-09-12T18:18:21Z"
 }
