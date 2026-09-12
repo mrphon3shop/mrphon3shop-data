@@ -1,0 +1,64 @@
+# ============================================================================
+#  watchdog.yml — the chain keeper that lives in the memory repository.
+#
+#  Independent from the node repository on purpose: if the node workflow is
+#  broken, disabled or simply not running, this cron still notices the silence
+#  and starts a fresh node.
+# ============================================================================
+name: watchdog
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+  workflow_dispatch:
+  push:
+    paths:
+      - "config/watchdog.env"   # apply tunable changes immediately
+
+permissions:
+  contents: write
+
+concurrency:
+  group: memory-watchdog
+  cancel-in-progress: false
+
+jobs:
+  keep-the-chain-alive:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: signing key
+        if: env.HAS_KEY != 'false'
+        env:
+          FLEET_SIGN_KEY: ${{ secrets.FLEET_SIGN_KEY }}
+        run: |
+          if [ -n "${FLEET_SIGN_KEY:-}" ]; then
+            umask 077
+            printf '%s\n' "$FLEET_SIGN_KEY" > "$RUNNER_TEMP/fleet_sign"
+            echo "FLEET_SIGN_KEY_FILE=$RUNNER_TEMP/fleet_sign" >> "$GITHUB_ENV"
+          else
+            echo "no signing secret configured"
+          fi
+
+      - name: assess and (if needed) restart the chain
+        env:
+          WORKFLOW_PAT: ${{ secrets.WORKFLOW_PAT }}
+          TS_API_TOKEN: ${{ secrets.TS_API_TOKEN }}
+        run: python3 scripts/watchdog_check.py
+
+      - name: commit watchdog state
+        if: always()
+        run: |
+          git config user.name "memory-watchdog"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A state/ 2>/dev/null || true
+          if ! git diff --cached --quiet; then
+            git commit -q -m "watchdog: run ${GITHUB_RUN_ID} [skip ci]"
+            git push -q origin HEAD:main || echo "push raced with a node — will retry next tick"
+          else
+            echo "no watchdog state change to publish"
+          fi

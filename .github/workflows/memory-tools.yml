@@ -1,0 +1,69 @@
+# ============================================================================
+#  memory-tools.yml — manual operations on the encrypted memory.
+#    verify   : check signatures + blob hashes, list the inventory
+#    restore  : materialise the latest snapshot into a tarball artifact
+#    rotate   : re-encrypt every blob for a new age recipient
+# ============================================================================
+name: memory-tools
+
+on:
+  workflow_dispatch:
+    inputs:
+      action:
+        type: choice
+        options: [verify, restore, rotate]
+        default: verify
+      new_recipient:
+        description: "age public key for rotate (age1...)"
+        type: string
+        default: ""
+
+permissions:
+  contents: write
+
+jobs:
+  tools:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: install age
+        run: |
+          curl -fsSL -o /tmp/age.tar.gz https://github.com/FiloSottile/age/releases/download/v1.2.0/age-v1.2.0-linux-amd64.tar.gz
+          tar -xzf /tmp/age.tar.gz -C /tmp
+          sudo install -m 0755 /tmp/age/age /usr/local/bin/age
+          age --version
+
+      - name: identity
+        env:
+          AGE_IDENTITY: ${{ secrets.AGE_IDENTITY }}
+        run: |
+          umask 077
+          printf '%s\n' "$AGE_IDENTITY" > "$RUNNER_TEMP/age.key"
+          echo "AGE_IDENTITY_FILE=$RUNNER_TEMP/age.key" >> "$GITHUB_ENV"
+          echo "recipient: $(age-keygen -y "$RUNNER_TEMP/age.key")"
+
+      - name: verify signatures and hashes
+        if: inputs.action == 'verify'
+        run: python3 scripts/memory_tools.py verify
+
+      - name: restore latest snapshot
+        if: inputs.action == 'restore'
+        run: python3 scripts/memory_tools.py restore --out /tmp/snapshot.tar
+
+      - name: upload snapshot
+        if: inputs.action == 'restore'
+        uses: actions/upload-artifact@v4
+        with:
+          name: snapshot-${{ github.run_id }}
+          path: /tmp/snapshot.tar
+          retention-days: 3
+
+      - name: rotate encryption recipient
+        if: inputs.action == 'rotate'
+        env:
+          NEW_RECIPIENT: ${{ inputs.new_recipient }}
+        run: python3 scripts/memory_tools.py rotate --recipient "$NEW_RECIPIENT"
