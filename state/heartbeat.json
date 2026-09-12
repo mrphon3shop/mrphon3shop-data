@@ -1,5 +1,20 @@
 {
-  "run_id": "", "node": "", "role": "none", "status": "never-started",
-  "updated_at": "2026-09-12T16:19:53Z", "epoch": 0, "deadline_epoch": 0, "uptime_seconds": 0,
-  "funnel": {"enabled": false}, "services": {"total": 0, "healthy": 0}, "apps_installed": 0
+  "run_id": "34705506792",
+  "node": "mrphon3shop-node",
+  "role": "unknown",
+  "status": "stopped",
+  "note": "first-boot",
+  "updated_at": "2026-09-12T16:32:43Z",
+  "epoch": 1789230763,
+  "deadline_epoch": 1789251708,
+  "uptime_seconds": 0,
+  "run_url": "https://github.com/mrphon3shop/mrphon3shop.com/actions/runs/34705506792",
+  "commit": "fa9e0bb6b4d372aa5b5d9a4a93390bece9fbcc00",
+  "funnel": {},
+  "services": {
+    "total": 2,
+    "healthy": 2
+  },
+  "apps_installed": 21,
+  "generation": 1
 }
