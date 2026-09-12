@@ -1,6 +1,6 @@
 {
-  "seq": 107,
-  "updated_at": "2026-09-12T18:28:55Z",
+  "seq": 114,
+  "updated_at": "2026-09-12T18:29:32Z",
   "blobs": {
     "inventory": {
       "sha256": "e53963bd73f441fbf8a7636b2c43e6e615c17fb8134fdb33f9035e97b7100a3d",
@@ -11,60 +11,60 @@
       "repo_rev": "cf93b83"
     },
     "appdata-webapp": {
-      "sha256": "7d3dac452017e01621f9de4df478f7ccdffe685d8134f9cc12d98bac4b0758e6",
+      "sha256": "06499b2e797f39b48546859cc36cf23fdbfb543af0347cad4648c9d1782d2fb0",
       "size": 442,
       "kind": "data",
-      "updated_at": "2026-09-12T18:28:55Z",
+      "updated_at": "2026-09-12T18:29:31Z",
       "node_run": "34707530220",
-      "repo_rev": "6d640d2"
+      "repo_rev": "e768f91"
     },
     "appcfg-webapp": {
-      "sha256": "d0cb25c0c5d186b3387284cec6af041e1afc5a65a521826ec4744b8006b94145",
+      "sha256": "72df486b004874e6db72525de1e141311b136b74310394eae63712dd0c28c123",
       "size": 425,
       "kind": "data",
-      "updated_at": "2026-09-12T18:28:55Z",
+      "updated_at": "2026-09-12T18:29:31Z",
       "node_run": "34707530220",
-      "repo_rev": "6d640d2"
+      "repo_rev": "e768f91"
     },
     "tailscale-state": {
-      "sha256": "4ceb2de3824eea6091c1dc57ff5f20c4ddbb58e5fc02a6a5e5aaad3502c2618a",
-      "size": 8902,
+      "sha256": "fc07b8d9931577693de0ddbfb51fbf71961c63ae2cf3fee8dd2189168a340ee4",
+      "size": 8904,
       "kind": "data",
-      "updated_at": "2026-09-12T18:28:55Z",
+      "updated_at": "2026-09-12T18:29:31Z",
       "node_run": "34707530220",
-      "repo_rev": "6d640d2"
+      "repo_rev": "e768f91"
     },
     "system": {
-      "sha256": "6ccb5b9374450c3261861ea60934345dfb7c42853935f4ca9a555f4bdf9490d3",
-      "size": 5121,
+      "sha256": "aac357747e304b239dca9e0c25363d522fa9e7d3298f7be121578ec074f0624f",
+      "size": 5131,
       "kind": "data",
-      "updated_at": "2026-09-12T18:28:55Z",
+      "updated_at": "2026-09-12T18:29:32Z",
       "node_run": "34707530220",
-      "repo_rev": "6d640d2"
+      "repo_rev": "e768f91"
     },
     "desired": {
-      "sha256": "6e7b9a18020c7647e8adc59a698a14ca92066741111e8dd215593eb511f07b87",
+      "sha256": "1b2e2491c1b7592b21cafb4ebfdcfd9e41cad7e670043f84775c0a370252dde6",
       "size": 374,
       "kind": "data",
-      "updated_at": "2026-09-12T18:28:55Z",
+      "updated_at": "2026-09-12T18:29:32Z",
       "node_run": "34707530220",
-      "repo_rev": "6d640d2"
+      "repo_rev": "e768f91"
     },
     "appdata-x-ui": {
-      "sha256": "de8e2805dddfb4766f6311098cc374a4de7805498b13e30d6cdfdf7ce962a94f",
-      "size": 31452,
+      "sha256": "e462d807bb55af8b4e58e800012a427e7d3c2ebb4298fd6733d98da4d91eec06",
+      "size": 33660,
       "kind": "data",
-      "updated_at": "2026-09-12T18:28:55Z",
+      "updated_at": "2026-09-12T18:29:31Z",
       "node_run": "34707530220",
-      "repo_rev": "6d640d2"
+      "repo_rev": "e768f91"
     },
     "appcfg-mirzabot": {
-      "sha256": "a47833bc90e57c91ffe791aa7cbff5675abaedefabb2311694d52b8a7cbecae1",
+      "sha256": "5474cd139df09e273cdfe2ac2a813a0203e3161f8a1ad2aba08a6d5c38c4b3a6",
       "size": 2675,
       "kind": "data",
-      "updated_at": "2026-09-12T18:28:55Z",
+      "updated_at": "2026-09-12T18:29:31Z",
       "node_run": "34707530220",
-      "repo_rev": "6d640d2"
+      "repo_rev": "e768f91"
     },
     "appdata-mirzabot": {
       "sha256": "3262d855702894357ec861d964392b67b81cdcbbe65a186a19cca0333f8993cd",
