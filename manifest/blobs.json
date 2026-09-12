@@ -1,6 +1,6 @@
 {
-  "seq": 150,
-  "updated_at": "2026-09-12T19:34:32Z",
+  "seq": 159,
+  "updated_at": "2026-09-12T19:42:50Z",
   "blobs": {
     "inventory": {
       "sha256": "069c6f7a20e1cea9b71900e39628e4d6ee06a4c327ae22df9f7acb34d4483e22",
@@ -11,60 +11,60 @@
       "repo_rev": "fe5f2fc"
     },
     "appdata-webapp": {
-      "sha256": "346f67ba5a811a90047847c5c7621de1a2e11034a7a00c3f2eae2eaced95f137",
-      "size": 442,
+      "sha256": "c52bb54ab315498a57ea230cc2983de60f850180570f7d5e3667b7ad66ad4d43",
+      "size": 447,
       "kind": "data",
-      "updated_at": "2026-09-12T19:33:13Z",
-      "node_run": "34707530220",
-      "repo_rev": "9e72983"
+      "updated_at": "2026-09-12T19:42:50Z",
+      "node_run": "local",
+      "repo_rev": "9255902"
     },
     "appcfg-webapp": {
-      "sha256": "1061dd5069fa9dd9a45a61a85df1b55a706649095867b8210cc23cc9a67090e1",
+      "sha256": "ce2da3f08e86cf51f2940487dff237d6d3dd21a7ef5e0bee7b744e33045f754e",
       "size": 425,
       "kind": "data",
-      "updated_at": "2026-09-12T19:33:13Z",
-      "node_run": "34707530220",
-      "repo_rev": "9e72983"
+      "updated_at": "2026-09-12T19:42:50Z",
+      "node_run": "local",
+      "repo_rev": "9255902"
     },
     "tailscale-state": {
-      "sha256": "c13d6ad2e3fd10e5f4581863584775558740cfa53b610d12ecdcc0d15373ce22",
-      "size": 8864,
+      "sha256": "a13b4361a76593e5badf61a6eb86f3c7ca4f507ffa96901fe68403eb3820bc33",
+      "size": 8858,
       "kind": "data",
-      "updated_at": "2026-09-12T19:33:13Z",
-      "node_run": "34707530220",
-      "repo_rev": "9e72983"
+      "updated_at": "2026-09-12T19:42:50Z",
+      "node_run": "local",
+      "repo_rev": "9255902"
     },
     "system": {
-      "sha256": "70d4adbfc9d892f96fbf1b17df3eea14accd52bc688537fa923da2069ae488bd",
-      "size": 2154,
+      "sha256": "b50ca61d3542d9c4faf6a4748e30730203472c2da746df5bb4760754a3264c46",
+      "size": 5237,
       "kind": "data",
-      "updated_at": "2026-09-12T19:33:13Z",
-      "node_run": "34707530220",
-      "repo_rev": "9e72983"
+      "updated_at": "2026-09-12T19:42:50Z",
+      "node_run": "local",
+      "repo_rev": "9255902"
     },
     "desired": {
-      "sha256": "8ff7ba27ce72955c95c2ac5b8b75f0846c857dad122f3251b4c3701a7c0f8247",
-      "size": 374,
+      "sha256": "07d21a4072a1f992af62c097cf94d78875734853eb73cbf1d66799ff4b707be5",
+      "size": 369,
       "kind": "data",
-      "updated_at": "2026-09-12T19:33:13Z",
-      "node_run": "34707530220",
-      "repo_rev": "9e72983"
+      "updated_at": "2026-09-12T19:42:50Z",
+      "node_run": "local",
+      "repo_rev": "9255902"
     },
     "appdata-x-ui": {
-      "sha256": "6dfba14096ea1fd7de9b9153294159c9dea97fd768357f89bd7144b76863fa3e",
-      "size": 104121,
+      "sha256": "220b72dd46f7f055911a6eb86c4c6c4f2e4798a1c25a26bcb468c30e1c8a66b5",
+      "size": 31484,
       "kind": "data",
-      "updated_at": "2026-09-12T19:14:04Z",
-      "node_run": "34707530220",
-      "repo_rev": "37d8a0c"
+      "updated_at": "2026-09-12T19:42:50Z",
+      "node_run": "local",
+      "repo_rev": "9255902"
     },
     "appcfg-mirzabot": {
-      "sha256": "d1df0445d15b3f5aad3ab6ab1e1894e54ebec58e984f09e8afccd9e04fbf6820",
+      "sha256": "41a7310ac025c7346afacf3121370fc02c576270a14bada472aa9a0a3d53629d",
       "size": 2675,
       "kind": "data",
-      "updated_at": "2026-09-12T19:14:04Z",
-      "node_run": "34707530220",
-      "repo_rev": "37d8a0c"
+      "updated_at": "2026-09-12T19:42:50Z",
+      "node_run": "local",
+      "repo_rev": "9255902"
     },
     "appdata-mirzabot": {
       "sha256": "3262d855702894357ec861d964392b67b81cdcbbe65a186a19cca0333f8993cd",
@@ -75,20 +75,20 @@
       "repo_rev": "c56504d"
     },
     "appdata-marzban": {
-      "sha256": "af335f1fbda93dd0a538653e43c704e8e618641c3bd1914514625fce8bacf93b",
+      "sha256": "097a2665133220412ceb9510d50b495c46ce6fdf6ad8a8fb54da269e597b0dd4",
       "size": 6835,
       "kind": "data",
-      "updated_at": "2026-09-12T19:14:04Z",
-      "node_run": "34707530220",
-      "repo_rev": "37d8a0c"
+      "updated_at": "2026-09-12T19:42:50Z",
+      "node_run": "local",
+      "repo_rev": "9255902"
     },
     "appcfg-marzban": {
-      "sha256": "8d717637df356a4608ccd02c5f0a61bfc0d103f1d59efd4cb3d4b1e3510c4b18",
-      "size": 2407,
+      "sha256": "3bbce4a03c6eb5fbfc6772651005a4d4878a1a226d29702efbc5e05d484318d9",
+      "size": 2414,
       "kind": "data",
-      "updated_at": "2026-09-12T19:14:04Z",
-      "node_run": "34707530220",
-      "repo_rev": "37d8a0c"
+      "updated_at": "2026-09-12T19:42:50Z",
+      "node_run": "local",
+      "repo_rev": "9255902"
     }
   }
 }
