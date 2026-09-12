@@ -1,6 +1,7 @@
 {
   "handoff": true,
-  "requested_at": "2026-09-12T19:27:56Z",
-  "requested_by": "mrphon3shop",
-  "also_sync": false
+  "requested_at": "2026-09-12T20:46:01Z",
+  "requested_by": "operator-recovery",
+  "also_sync": false,
+  "reason": "the servo node lost its tailnet door after a bad repair; retire it so a fresh node can join and serve"
 }
