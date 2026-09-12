@@ -1,7 +1,7 @@
 {
-  "handoff": true,
-  "requested_at": "2026-09-12T20:46:01Z",
-  "requested_by": "operator-recovery",
+  "handoff": false,
+  "requested_at": "",
+  "requested_by": "operator",
   "also_sync": false,
-  "reason": "the servo node lost its tailnet door after a bad repair; retire it so a fresh node can join and serve"
+  "cleared": "the previous node is retired; the successor must stay"
 }
