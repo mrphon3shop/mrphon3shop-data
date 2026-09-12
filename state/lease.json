@@ -1,14 +1,13 @@
 {
   "holder": {
-    "run_id": "34714360469",
-    "device": "mrphon3shop-node.tail3641f4.ts.net",
-    "node": "mrphon3shop-node",
-    "started_at": "2026-09-12T19:34:11Z",
-    "url": "https://github.com/mrphon3shop/mrphon3shop.com/actions/runs/34714360469"
+    "run_id": "",
+    "device": "",
+    "started_at": "2026-09-12T20:56:54Z"
   },
-  "state": "serving",
+  "state": "free",
   "epoch": 2,
   "acquired_at": "2026-09-12T19:34:11Z",
-  "expires_at": 1789262831,
-  "heartbeat_at": 1789241651
+  "expires_at": 1789246613,
+  "heartbeat_at": 1789241651,
+  "released_at": "2026-09-12T20:56:54Z"
 }
