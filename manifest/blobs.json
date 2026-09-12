@@ -1,1 +1,14 @@
-{ "seq": 0, "updated_at": "2026-09-12T16:19:53Z", "blobs": {} }
+{
+  "seq": 1,
+  "updated_at": "2026-09-12T16:32:11Z",
+  "blobs": {
+    "inventory": {
+      "sha256": "299ab3fb69bbecada3143f1502ff567cdc85ab60fdf66378a0949930a335b625",
+      "size": 967,
+      "kind": "data",
+      "updated_at": "2026-09-12T16:32:11Z",
+      "node_run": "34705506792",
+      "repo_rev": "8988db4"
+    }
+  }
+}
