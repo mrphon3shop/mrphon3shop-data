@@ -1,6 +1,6 @@
 {
   "hostname": "mrphon3shop-node.tail3641f4.ts.net",
-  "tailnet_ip": "100.108.26.103",
+  "tailnet_ip": "100.75.11.60",
   "funnel": {
     "enabled": true,
     "verified": true,
@@ -16,5 +16,5 @@
   "tailscale_version": "1.102.4",
   "backend_state": "Running",
   "attempted_funnel_ports": false,
-  "updated_at": "2026-09-12T21:03:28Z"
+  "updated_at": "2026-09-13T02:48:15Z"
 }
