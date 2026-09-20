@@ -1,1 +1,7 @@
-{ "run_id": "", "ready": false, "ts": "2026-09-12T16:19:53Z", "note": "no handover recorded yet" }
+{
+  "run_id": "35512861047",
+  "node": "mrphon3shop-node",
+  "standby_seconds": 60,
+  "ready": true,
+  "ts": "2026-09-20T13:15:53Z"
+}
