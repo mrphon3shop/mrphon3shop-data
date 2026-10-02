@@ -1,14 +1,14 @@
 {
-  "seq": 440,
-  "updated_at": "2026-10-02T15:05:29Z",
+  "seq": 441,
+  "updated_at": "2026-10-02T18:10:58Z",
   "blobs": {
     "inventory": {
-      "sha256": "3eeb7bf46cc89ab3f120453006f60acb37f1fedc0fcf65c80f7e4a82d064ae11",
-      "size": 1045,
+      "sha256": "0d47ccc5420689a4d60a2d8d21536abe6c78c371dd8a5e310282a41061e26e42",
+      "size": 1047,
       "kind": "data",
-      "updated_at": "2026-10-02T15:05:29Z",
-      "node_run": "37024359067",
-      "repo_rev": "02033fb"
+      "updated_at": "2026-10-02T18:10:58Z",
+      "node_run": "37045581074",
+      "repo_rev": "9520da2"
     },
     "appdata-webapp": {
       "sha256": "b9f57bf737a78e53fd51f5fd9af7df61e4f4f93e5528a059f0ca6607aee2e1b6",
