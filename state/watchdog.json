@@ -1,8 +1,8 @@
 {
   "active_node_runs": 0,
-  "checked_at": "2026-10-26T19:27:00Z",
+  "checked_at": "2026-10-26T23:14:00Z",
   "dispatched": true,
-  "heartbeat_age_seconds": 3153426,
+  "heartbeat_age_seconds": 3167046,
   "integrity": {
     "checked": [
       "state/lease.json",
@@ -13,5 +13,5 @@
   },
   "node_alive": false,
   "stale_devices_removed": 0,
-  "watchdog_run": "40386816391"
+  "watchdog_run": "40418307702"
 }
