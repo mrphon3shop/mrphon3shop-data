@@ -1,7 +1,7 @@
 {
   "run_id": "44885591762",
   "node": "mrphon3shop-node",
-  "standby_seconds": 360,
+  "standby_seconds": 420,
   "ready": true,
-  "ts": "2026-11-21T08:43:24Z"
+  "ts": "2026-11-21T08:44:30Z"
 }
